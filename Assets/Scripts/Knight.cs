@@ -7,13 +7,15 @@ public class Knight : MonoBehaviour
 {
     SpriteRenderer sr;
     Animator animator;
+    AudioSource audioSource;
+    public AudioClip[] footsteps;
     public bool canRun = true;
     public float speed = 2f;
-    
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
@@ -37,6 +39,11 @@ public class Knight : MonoBehaviour
         {
             transform.position = transform.position + velocity;
         }
+    }
+
+    public void playFootstepSound()
+    {
+        audioSource.PlayOneShot(footsteps[Random.Range(0, 9)]);
     }
 
     public void attackHasFinished()
