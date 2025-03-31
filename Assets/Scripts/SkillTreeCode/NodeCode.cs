@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class NodeCode : MonoBehaviour
 {
     public GameObject[] futureNodes;
+    public UnityEvent becomeSelectable;
     public Material lineMaterial;
     public int state = 0;
 
@@ -14,7 +16,22 @@ public class NodeCode : MonoBehaviour
         for (int i = 0; i < futureNodes.Length; i++)
         {
             futureNodes[i].GetComponent<NodeCode>().drawLine(transform.position);
+            becomeSelectable.AddListener(futureNodes[i].GetComponent<NodeCode>().Selectable);
         }
+    }
+
+    public void Unlock()
+    {
+        gameObject.GetComponent<Button>().interactable = false;
+        state = 2;
+        becomeSelectable.Invoke();
+    }
+
+    public void Selectable()
+    {
+        gameObject.GetComponent<Button>().interactable = true;
+        state = 1;
+        // start the 'grow then shrink' coroutine
     }
 
     public void drawLine(Vector3 pastNode)
