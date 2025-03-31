@@ -10,11 +10,14 @@ public class NodeCode : MonoBehaviour
     public GameObject textbox;
     public AnimationCurve sizeCurve;
     public UnityEvent becomeSelectable;
+    public Sprite[] iconFiles;
+    public Image icon;
     public Material lineMaterial;
     public int state = 0;
 
     void Start()
     {
+        icon.sprite = iconFiles[state];
         for (int i = 0; i < futureNodes.Length; i++)
         {
             futureNodes[i].GetComponent<NodeCode>().drawLine(transform.position);
@@ -40,6 +43,7 @@ public class NodeCode : MonoBehaviour
     {
         gameObject.GetComponent<Button>().interactable = false;
         state = 2;
+        icon.sprite = iconFiles[state];
         becomeSelectable.Invoke();
     }
 
@@ -47,6 +51,7 @@ public class NodeCode : MonoBehaviour
     {
         gameObject.GetComponent<Button>().interactable = true;
         state = 1;
+        icon.sprite = iconFiles[state];
         StartCoroutine(GrowThenShrink());
     }
 
