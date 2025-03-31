@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class NodeCode : MonoBehaviour
 {
     public GameObject[] futureNodes;
+    public GameObject textbox;
+    public AnimationCurve sizeCurve;
     public UnityEvent becomeSelectable;
     public Material lineMaterial;
     public int state = 0;
@@ -17,6 +19,20 @@ public class NodeCode : MonoBehaviour
         {
             futureNodes[i].GetComponent<NodeCode>().drawLine(transform.position);
             becomeSelectable.AddListener(futureNodes[i].GetComponent<NodeCode>().Selectable);
+        }
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        for (int i = 0; i < futureNodes.Length; i++)
+        {
+            if (futureNodes[i].GetComponent<NodeCode>().state == 2)
+            {
+                futureNodes[i].GetComponent<LineRenderer>().startWidth = 0.5f;
+                futureNodes[i].GetComponent<LineRenderer>().endWidth = 0.5f;
+            }
         }
     }
 
@@ -31,7 +47,7 @@ public class NodeCode : MonoBehaviour
     {
         gameObject.GetComponent<Button>().interactable = true;
         state = 1;
-        // start the 'grow then shrink' coroutine
+        StartCoroutine(GrowThenShrink());
     }
 
     public void drawLine(Vector3 pastNode)
@@ -49,16 +65,19 @@ public class NodeCode : MonoBehaviour
         temp.SetPosition(1, currentPos);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void hover()
     {
-        for (int i = 0; i < futureNodes.Length; i++)
+        //textbox.GetComponent<TextboxFunction>().selectedNode = gameObject;
+    }
+
+    IEnumerator GrowThenShrink()
+    {
+        float t = 0;
+        while (t < 1)
         {
-            if (futureNodes[i].GetComponent<NodeCode>().state == 2)
-            {
-                futureNodes[i].GetComponent<LineRenderer>().startWidth = 0.5f;
-                futureNodes[i].GetComponent<LineRenderer>().endWidth = 0.5f;
-            }
+            t += Time.deltaTime;
+            transform.localScale = Vector3.one * sizeCurve.Evaluate(t);
+            yield return null;
         }
     }
 }
