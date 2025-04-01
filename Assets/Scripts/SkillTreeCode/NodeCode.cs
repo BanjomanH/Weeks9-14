@@ -13,7 +13,10 @@ public class NodeCode : MonoBehaviour
     public Sprite[] iconFiles;
     public Image icon;
     public Material lineMaterial;
+    public Material purchasedMaterial;
     public int state = 0;
+    public string title;
+    public string body;
 
     void Start()
     {
@@ -35,6 +38,7 @@ public class NodeCode : MonoBehaviour
             {
                 futureNodes[i].GetComponent<LineRenderer>().startWidth = 0.5f;
                 futureNodes[i].GetComponent<LineRenderer>().endWidth = 0.5f;
+                futureNodes[i].GetComponent<LineRenderer>().material = purchasedMaterial;
             }
         }
     }

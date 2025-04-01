@@ -186,12 +186,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   iconFiles:
-  - {fileID: 21300000, guid: cc71de19e285e3540af9cf908da6d9f0, type: 3}
+  - {fileID: 21300000, guid: f13772027f809e54b8ae9dd4ba5318fe, type: 3}
   - {fileID: 21300000, guid: 68d0f252dbf7a514e8f2d4ef397c7eee, type: 3}
-  - {fileID: 21300000, guid: 40724d6ce9def0e4782a1b6fd9f219f2, type: 3}
+  - {fileID: 21300000, guid: a5334be3deb119e479afb98cdd0b9617, type: 3}
   icon: {fileID: 4597192352669271331}
-  lineMaterial: {fileID: 2100000, guid: f1ae544e2dc8c2c4b94da62349c290db, type: 2}
+  lineMaterial: {fileID: 2100000, guid: 09ae4cd9de167b846b679b68cf30a3c9, type: 2}
+  purchasedMaterial: {fileID: 2100000, guid: b7f41dced03532e408430f03c1e27cc6, type: 2}
   state: 0
+  title: 
+  body: 
 --- !u!114 &2900072262607085072
 MonoBehaviour:
   m_ObjectHideFlags: 0

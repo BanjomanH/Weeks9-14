@@ -223,9 +223,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Pickaxes can now be consumed for -20 health
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Edible Pickaxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3dbe679dc12c6b24a8b58b438e333af8, type: 3}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.data[0]
       value: 
@@ -349,6 +361,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Your 'Medic!' calls are now louder then your teammates
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Louder Callouts
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 19d0044b38f4f0c45bad2289f1e3eef8, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -500,6 +524,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Bullets now travel through walls and haunt targets
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Ghost Bullets
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: bfc4783ec3683a843b42f9c7fe51a5df, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -615,6 +651,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Spoon bending time is reduced by 50%
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Extra Sensory Perception
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: bce03d36494dbd842b6b52fa9eee7964, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -741,9 +789,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Double barrel shotguns are now doubled
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Double Double Barrel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 8aaa724d6cdc7da49af8bdc7437325f8, type: 3}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.data[0]
       value: 
@@ -887,6 +947,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: +20% damage while breathing through a snorkel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Snorkel Damage Boost
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: f2ada77b7c35eff41aa8ac9014da2717, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1085,9 +1157,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Stock portfolio is now worth 2% more
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Stronger Portfolio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 895dadca69236994c8fcf5a3a6dce363, type: 3}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.data[0]
       value: 
@@ -1211,6 +1295,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Enemy bullets are commented out for testing
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Bullet Points
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 873fd7136e06d464b9005e135f9466f2, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1316,6 +1412,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Free time now recharges 15% faster
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Free Time Overcharge
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 38459f6be52a15d40aa245b952977795, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1489,6 +1597,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Clocks now fall off the walls when within 5 meters
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Running Time
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: ce041084297345e4f8ba64091e8e482a, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1604,6 +1724,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Store +3 ammo in your mustache
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: More Mustache Ammo
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 3fb15479beba7c24da41be8f1f2feb61, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1710,9 +1842,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: 25 percent of 25% increases are increased by 25%
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: 25% Increase
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 392c06803ee562c4c9e5df2dd7aa4fca, type: 3}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.data[0]
       value: 
@@ -1961,13 +2105,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: body
+      value: Increases blade count to twice the normal amount
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: state
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: title
+      value: Double Blade
       objectReference: {fileID: 0}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
+      propertyPath: iconFiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6c2a53acccd114e4f8765eb531d9834b, type: 3}
     - target: {fileID: 7594484451754261468, guid: 4c18fede21bd5a14cb84fd7cde5669c3, type: 3}
       propertyPath: futureNodes.Array.data[0]
       value: 
