@@ -76,8 +76,7 @@ public class NodeCode : MonoBehaviour
 
     public void hover()
     {
-        textbox.GetComponent<TextboxScript>().selectedNode = gameObject;
-        textbox.GetComponent<TextboxScript>().newTextBox();
+        textbox.GetComponent<TextboxScript>().newTextBox(gameObject);
     }
 
     IEnumerator GrowThenShrink()
