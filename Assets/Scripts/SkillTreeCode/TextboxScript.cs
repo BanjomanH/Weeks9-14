@@ -6,72 +6,50 @@ using UnityEngine;
 public class TextboxScript : MonoBehaviour
 {
     public GameObject selectedNode;
-    public IEnumerator createBox;
+    public Coroutine createBox;
     public AnimationCurve sizeCurve;
 
-    int textBoxPhase = 0;
+    bool createBoxRunning = false;
     float time = 0;
-
-    private void Start()
-    {
-        createBox = CreateBox();
-    }
 
     public void newTextBox()
     {
-        StopCoroutine(createBox);
-        StartCoroutine(createBox);
-    }
-
-    public void Update()
-    {
-        Debug.Log(textBoxPhase);
+        if (createBox != null)
+        {
+            StopCoroutine(createBox);
+        }
+        createBox = StartCoroutine(CreateBox());
     }
 
     IEnumerator CreateBox()
     {
-        textBoxPhase = 0;
-        yield return StartCoroutine(boxStart());
-        yield return StartCoroutine(boxUnlock());
-        yield return StartCoroutine(boxEnd());
-    }
-
-    IEnumerator boxStart()
-    {
         time = 0;
-        while(time < 1 && textBoxPhase == 0)
+        createBoxRunning = true;
+        while (true)
         {
-            time += Time.deltaTime;
-            transform.localScale = Vector3.one * sizeCurve.Evaluate(time);
-            yield return null;
-        }
-        if (textBoxPhase == 0)
-        {
-            textBoxPhase = 1;
-        }
-    }
-
-    IEnumerator boxUnlock()
-    {
-        while (textBoxPhase == 1)
-        {
+            if (time < 1)
+            {
+                time += Time.deltaTime * 3;
+                transform.localScale = Vector3.one * sizeCurve.Evaluate(time);
+            }
             yield return null;
         }
     }
 
-    IEnumerator boxEnd()
+    IEnumerator BoxEnd()
     {
-        while (time > 0 && textBoxPhase == 2)
+        while (time > 0 && createBoxRunning == false)
         {
-            time -= Time.deltaTime;
+            time -= Time.deltaTime * 3;
             transform.localScale = Vector3.one * sizeCurve.Evaluate(time);
             yield return null;
         }
-        StopCoroutine(createBox);
     }
 
     public void exitNode()
     {
-        textBoxPhase = 2;
+        StopCoroutine(createBox);
+        createBoxRunning = false;
+        StartCoroutine(BoxEnd());
     }
 }
