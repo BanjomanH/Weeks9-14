@@ -63,7 +63,7 @@ public class NodeCode : MonoBehaviour
     {
         Vector3 currentPos = transform.position;
         currentPos.z = 0;
-        LineRenderer temp = gameObject.AddComponent<LineRenderer>();
+        LineRenderer temp = gameObject.GetComponent<LineRenderer>();
 
         temp.material = lineMaterial;
         temp.startWidth = 0.3f;
