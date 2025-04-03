@@ -45,7 +45,6 @@ public class NodeCode : MonoBehaviour
 
     public void Unlock()
     {
-        gameObject.GetComponent<Button>().interactable = false;
         state = 2;
         icon.sprite = iconFiles[state];
         becomeSelectable.Invoke();
@@ -53,7 +52,6 @@ public class NodeCode : MonoBehaviour
 
     public void Selectable()
     {
-        gameObject.GetComponent<Button>().interactable = true;
         state = 1;
         icon.sprite = iconFiles[state];
         StartCoroutine(GrowThenShrink());
@@ -63,6 +61,7 @@ public class NodeCode : MonoBehaviour
     {
         Vector3 currentPos = transform.position;
         currentPos.z = 0;
+        pastNode.z = 0;
         LineRenderer temp = gameObject.GetComponent<LineRenderer>();
 
         temp.material = lineMaterial;

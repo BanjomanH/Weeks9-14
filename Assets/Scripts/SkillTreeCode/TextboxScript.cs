@@ -14,6 +14,7 @@ public class TextboxScript : MonoBehaviour
     public AnimationCurve sizeCurve;
     public TMP_Text Title;
     public TMP_Text Body;
+    public Slider bar;
 
     bool createBoxRunning = false;
     float time = 0;
@@ -25,8 +26,11 @@ public class TextboxScript : MonoBehaviour
         Title.text = temp.title;
         Body.text = temp.body;
         GetComponentInChildren<SpriteRenderer>().sprite = temp.iconFiles[1];
-        transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 2, 100);
-
+        Vector3 mousePosition = nodeToSelect.transform.position;
+        mousePosition.z = -3;
+        mousePosition.y += 2.2f;
+        transform.position = mousePosition;
+        
         if (createBox != null)
         {
             StopCoroutine(createBox);
@@ -44,6 +48,18 @@ public class TextboxScript : MonoBehaviour
             {
                 time += Time.deltaTime * 3;
                 transform.localScale = Vector3.one * sizeCurve.Evaluate(time);
+            }
+            
+            if (Input.GetMouseButton(0) && selectedNode.GetComponent<NodeCode>().state == 1)
+            {
+                bar.value += Time.deltaTime;
+                if (bar.value == 1)
+                {
+                    selectedNode.GetComponent<NodeCode>().Unlock();
+                }
+            } else
+            {
+                bar.value = 0;
             }
             yield return null;
         }
