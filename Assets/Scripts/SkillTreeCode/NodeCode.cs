@@ -18,8 +18,11 @@ public class NodeCode : MonoBehaviour
     public string title;
     public string body;
 
+    Image background;
+
     void Start()
     {
+        background = GetComponent<Image>();
         icon.sprite = iconFiles[state];
         for (int i = 0; i < futureNodes.Length; i++)
         {
@@ -46,6 +49,7 @@ public class NodeCode : MonoBehaviour
     public void Unlock()
     {
         state = 2;
+        background.material = purchasedMaterial;
         icon.sprite = iconFiles[state];
         becomeSelectable.Invoke();
     }
