@@ -14,6 +14,7 @@ public class NodeCode : MonoBehaviour
     public Image icon;
     public Material lineMaterial;
     public Material purchasedMaterial;
+    public Material purchasableMaterial;
     public int state = 0;
     public string title;
     public string body;
@@ -23,7 +24,16 @@ public class NodeCode : MonoBehaviour
     void Start()
     {
         background = GetComponent<Image>();
-        icon.sprite = iconFiles[state];
+
+        if (state == 0)
+        {
+            background.material = lineMaterial;
+        } else if (state == 0)
+        {
+            background.material = null;
+        }
+
+            icon.sprite = iconFiles[state];
         for (int i = 0; i < futureNodes.Length; i++)
         {
             futureNodes[i].GetComponent<NodeCode>().drawLine(transform.position);
@@ -57,15 +67,17 @@ public class NodeCode : MonoBehaviour
     public void Selectable()
     {
         state = 1;
+        background.material = null;
         icon.sprite = iconFiles[state];
+        GetComponent<LineRenderer>().material = purchasableMaterial;
         StartCoroutine(GrowThenShrink());
     }
 
     public void drawLine(Vector3 pastNode)
     {
         Vector3 currentPos = transform.position;
-        currentPos.z = 0;
-        pastNode.z = 0;
+        currentPos.z = -0.7f;
+        pastNode.z = 1;
         LineRenderer temp = gameObject.GetComponent<LineRenderer>();
 
         temp.material = lineMaterial;

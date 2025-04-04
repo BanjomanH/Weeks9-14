@@ -69,8 +69,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 408c5204a6656aa45a099ef18c746753, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -136,6 +136,7 @@ MonoBehaviour:
   icon: {fileID: 4597192352669271331}
   lineMaterial: {fileID: 2100000, guid: 09ae4cd9de167b846b679b68cf30a3c9, type: 2}
   purchasedMaterial: {fileID: 2100000, guid: b7f41dced03532e408430f03c1e27cc6, type: 2}
+  purchasableMaterial: {fileID: 2100000, guid: a03fd9e4e40ba25498c328785e80a904, type: 2}
   state: 0
   title: 
   body: 
@@ -314,7 +315,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9004201565630288957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -30}
   m_LocalScale: {x: 0.21, y: 0.21, z: 0.21}
   m_ConstrainProportionsScale: 1
   m_Children: []
